@@ -1,15 +1,19 @@
 {
-  "name": "myc",
-  "version": "0.1.0",
-  "private": true,
+  "name": "cool-myc",
+  "version": "0.1.4",
+  "private": false,
+  "main": "dist/my-component.umd.js",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:p": "npm version minor && rm -rf ./dist && vue-cli-service build --dest ./dist --target lib --name my-component ./src/packages/MyComponent.vue"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11",
+    "vue": "2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2"
   },
@@ -26,6 +30,6 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
     "typescript": "~4.1.5",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "2.6.11"
   }
 }
