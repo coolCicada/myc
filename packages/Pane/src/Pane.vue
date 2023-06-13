@@ -13,7 +13,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 @Component({
   name: 'cool-p'
 })
-export default class MyComponent extends Vue {
+export default class Pane extends Vue {
   @Prop({
     type: String,
     required: true,

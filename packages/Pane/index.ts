@@ -1,6 +1,6 @@
 import Pane from './src/Pane.vue';
 
-Pane.install = function(Vue) {
+(Pane as any).install = function(Vue: any) {
   Vue.component(Pane.name, Pane);
 }
 
