@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MyComponent
+    <Pane
       title="ls"
       content="con"
     />
@@ -9,11 +9,11 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import MyComponent from './packages/MyComponent.vue';
+import Pane from '../packages/Pane/index.js';
 
 @Component({
   components: {
-    MyComponent,
+    Pane,
   },
 })
 export default class App extends Vue {}

@@ -1,8 +1,9 @@
 <template>
   <div class="my-component">
-    v0.1.4
+    {{ cnt }}
     <h1>{{ title }}</h1>
     <p>{{ content }}</p>
+    <button @click="add">btn</button>
   </div>
 </template>
 
@@ -24,6 +25,12 @@ export default class MyComponent extends Vue {
     required: true,
   })
   content!: string
+
+  cnt = 0
+
+  add() {
+    this.cnt ++;
+  }
 }
 </script>
 
