@@ -1,8 +1,8 @@
 {
-  "name": "cool-myc",
+  "name": "coolc-ui",
   "version": "0.2.4",
   "private": false,
-  "main": "dist/my-component.umd.js",
+  "main": "dist/coolc-ui.umd.js",
   "files": [
     "dist/"
   ],
