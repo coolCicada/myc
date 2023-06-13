@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "build:p": "npm version minor && rm -rf ./dist && vue-cli-service build --dest ./dist --target lib --name my-component ./src/packages/MyComponent.vue"
+    "build:p": "npm version patch && rm -rf ./dist && vue-cli-service build --dest ./dist --target lib --name my-component ./src/packages/MyComponent.vue"
   },
   "dependencies": {
     "core-js": "^3.6.5",
