@@ -9,7 +9,9 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
-@Component
+@Component({
+  name: 'cool-p'
+})
 export default class MyComponent extends Vue {
   @Prop({
     type: String,
