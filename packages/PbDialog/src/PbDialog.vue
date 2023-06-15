@@ -116,8 +116,12 @@ export default class PbDialog extends Vue {
     showCancelButton: false,
     closeOnPopstate: true,
     closeOnClickOverlay: false,
-    confirmCallback: () => {},
-    cancelCallback: () => {},
+    confirmCallback: () => {
+      console.log('a');
+    },
+    cancelCallback: () => {
+      console.log('a');
+    },
     // callback: (action : string) => {
     //   instance[action === 'confirm' ? 'resolve' : 'reject'](action);
     // },
