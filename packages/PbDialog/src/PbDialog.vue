@@ -142,7 +142,7 @@ export default class PbDialog extends Vue {
     return document.querySelector('.pb-dialog');
   }
 
-  alert(options: Object) {
+  alert(options: any) {
     this.curOptions = { ...this.defaultOptions, ...options };
     this.dialogStatus = true;
   }
