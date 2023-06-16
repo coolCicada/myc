@@ -11,7 +11,7 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
 @Component({
-  name: 'cool-p'
+  name: 'Pane'
 })
 export default class Pane extends Vue {
   @Prop({

@@ -53,6 +53,7 @@ Vue.use(SidebarItem);
 Vue.use(Dialog);
 
 @Component({
+  name: 'pbDialog',
 })
 export default class PbDialog extends Vue {
   @Prop({
