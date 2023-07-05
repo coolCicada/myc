@@ -5,7 +5,7 @@
       title="标题"
       show-cancel-button
     >
-      <img src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
+      <img width="20" src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
     </van-dialog>
     <button @click="toggle">toggle</button>
   </div>
