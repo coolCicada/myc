@@ -41,19 +41,14 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import {
-  NavBar, Cell, CellGroup, GridItem, Sidebar, SidebarItem, Dialog,
+  Dialog,
 } from 'vant';
-
-Vue.use(NavBar);
-Vue.use(Cell);
-Vue.use(CellGroup);
-Vue.use(GridItem);
-Vue.use(Sidebar);
-Vue.use(SidebarItem);
-Vue.use(Dialog);
 
 @Component({
   name: 'pbDialog',
+  components: {
+    'van-dialog': Dialog.Component,
+  }
 })
 export default class PbDialog extends Vue {
   @Prop({

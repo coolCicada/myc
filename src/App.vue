@@ -11,6 +11,9 @@
     />
     <button @click="click">打开dialog</button>
     <button @click="close">关闭dialog</button>
+    <br />
+    <PbDialogNew ref="pn"/>
+    <button @click="toggle">toggle new dialog</button>
   </div>
 </template>
 
@@ -18,11 +21,13 @@
 import { Component, Vue } from 'vue-property-decorator';
 import Pane from '../packages/Pane/index';
 import PbDialog from '../packages/PbDialog/index';
+import { PbDialogNew } from './index';
 
 @Component({
   components: {
     Pane,
     PbDialog,
+    PbDialogNew,
   },
 })
 export default class App extends Vue {
@@ -32,6 +37,10 @@ export default class App extends Vue {
 
   close() {
     (this.$refs.pbD as any).close();
+  }
+
+  toggle() {
+    (this.$refs.pn as any).toggle();
   }
 }
 </script>
