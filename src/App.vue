@@ -14,6 +14,7 @@
     <br />
     <PbDialogNew ref="pn"/>
     <button @click="toggle">toggle new dialog</button>
+    <PbTag />
   </div>
 </template>
 
@@ -21,13 +22,14 @@
 import { Component, Vue } from 'vue-property-decorator';
 import Pane from '../packages/Pane/index';
 import PbDialog from '../packages/PbDialog/index';
-import { PbDialogNew } from './index';
+import { PbDialogNew, PbTag } from './index';
 
 @Component({
   components: {
     Pane,
     PbDialog,
     PbDialogNew,
+    PbTag,
   },
 })
 export default class App extends Vue {
