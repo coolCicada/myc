@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "build": "vue-cli-service build",
+    "build": "rm -rf ./dist && vue-cli-service build --dest ./dist --target lib --name coolc-ui ./src/index.ts",
     "build:p": "npm version patch && rm -rf ./dist && vue-cli-service build --dest ./dist --target lib --name coolc-ui ./src/index.ts && npm publish"
   },
   "dependencies": {
